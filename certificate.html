@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <style>
+            body {
+                text-align: center;
+                font-family: "adelle-sans", sans-serif;
+            }
+
+            .logo {
+              max-width: 50%;
+              margin-bottom: 4em;
+            }
+
+            .sponsors img {
+              max-width: 25%;
+              display: block;
+              margin: 0 auto 1em auto;
+            }
+
+            h3 {
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+
+            h1 {
+              color: #A63C00;
+              margin: 1em 0;
+            }
+
+            a {
+              color: #000;
+              text-decoration: none;
+              position: absolute;
+              bottom: 1em;
+              left: 25%;
+              width: 50%;
+              font-weight: bold;
+            }
+
+            p {
+              line-height: 2;
+              margin-bottom: 3em;
+            }
+        </style>
+
+        <script type="text/javascript">
+          (function() {
+            var config = {
+              kitId: 'vhd8ejg',
+              scriptTimeout: 3000
+            };
+            var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+          })();
+        </script>
+    </head>
+    <body>
+
+        <img src="logos/railsbridge.png" alt="RailsBridge Cape Town logo" class="logo" />
+
+        <h3>Certificate of Completion</h3>
+        <h1>{{Student Name}}</h1>
+        <p>has completed the RailsBridge Cape Town<br />
+        Introduction to Ruby on Rails course<br />
+        on {{Course Date}}.</p>
+
+        <div class="sponsors">
+          <img src="logos/platform45.png" alt="Platform 45" />
+        </div>
+
+        <a href="http://railsbridgecapetown.org/">railsbridgecapetown.org</a>
+    </body>
+</html>
