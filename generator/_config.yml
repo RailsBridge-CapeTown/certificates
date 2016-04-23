@@ -1,0 +1,5 @@
+# Site settings
+title: RailsBridge HTML certificates
+
+# Build settings
+markdown: kramdown

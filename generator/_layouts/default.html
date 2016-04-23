@@ -39,17 +39,20 @@
             a {
               color: #000;
               text-decoration: none;
-              position: absolute;
-              bottom: 1em;
-              left: 25%;
-              width: 50%;
               font-weight: bold;
+              display: block;
+              margin-top: 25em;
             }
 
             p {
               line-height: 2;
               margin-bottom: 3em;
             }
+
+            section {
+              page-break-after: always;
+            }
+
         </style>
 
         <script type="text/javascript">
@@ -64,18 +67,23 @@
     </head>
     <body>
 
-        <img src="logos/railsbridge.png" alt="RailsBridge Cape Town logo" class="logo" />
+      {% for student in site.data.students %}
+      <section>
+
+
+        <img src="/logos/railsbridge.png" alt="RailsBridge Cape Town logo" class="logo" />
 
         <h3>Certificate of Completion</h3>
-        <h1>{{Student Name}}</h1>
-        <p>has completed the RailsBridge Cape Town<br />
-        Introduction to Ruby on Rails course<br />
-        on {{Course Date}}.</p>
+        <h1>{{ student.name }}</h1>
+        <p>completed the RailsBridge Cape Town<br />
+        <strong>{{ student.course }}</strong> course<br />
+        on <strong>23rd April 2016</strong></p>
 
         <div class="sponsors">
-          <img src="logos/platform45.png" alt="Platform 45" />
+          <img src="/logos/platform45.png" alt="Platform 45" />
         </div>
-
         <a href="http://railsbridgecapetown.org/">railsbridgecapetown.org</a>
+      </section>
+      {% endfor %}
     </body>
 </html>
