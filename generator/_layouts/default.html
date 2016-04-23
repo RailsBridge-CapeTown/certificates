@@ -12,7 +12,8 @@
         <style>
             body {
                 text-align: center;
-                font-family: "adelle-sans", sans-serif;
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 110%;
             }
 
             .logo {
@@ -41,12 +42,16 @@
               text-decoration: none;
               font-weight: bold;
               display: block;
-              margin-top: 25em;
+              margin-top: 12em;
             }
 
             p {
               line-height: 2;
-              margin-bottom: 3em;
+              margin-bottom: 5em;
+            }
+
+            h4 {
+              margin-bottom: 5em;
             }
 
             section {
@@ -54,16 +59,6 @@
             }
 
         </style>
-
-        <script type="text/javascript">
-          (function() {
-            var config = {
-              kitId: 'vhd8ejg',
-              scriptTimeout: 3000
-            };
-            var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-          })();
-        </script>
     </head>
     <body>
 
@@ -79,7 +74,10 @@
         <strong>{{ student.course }}</strong> course<br />
         on <strong>23rd April 2016</strong></p>
 
+        <h4>On behalf of RailsBridge Cape Town</h4>
+
         <div class="sponsors">
+          <strong>Sponsors</strong><br /><br />
           <img src="/logos/platform45.png" alt="Platform 45" />
         </div>
         <a href="http://railsbridgecapetown.org/">railsbridgecapetown.org</a>
